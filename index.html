@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi UI</title>
+    <link rel="stylesheet" src="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="textbox" id="left">
+        <div class="textbox" id="booking-form">
+            <h1>Lägg till ny bokning</h1>
+            <form>
+                <label for="name">Kundens namn:</label>
+                <input type="text" id="name" placeholder="Namn och efternamn">
+
+                <label for="address">Upphämtningsadress</label>
+                <input type="text" id="address" placeholder="Ange giltig adress">
+
+                <label for="destination">Destination</label>
+                <input type="text" id="destination" placeholder="Ange giltig adress">
+
+                <label for="phone">Kundens telefonnummer</label>
+                <input type="tel" id="phone" placeholder="+46">
+
+                <label for="passengers">Antal passagerare</label>
+                <select name="passengers">
+                    <option value="1-person">1 person</option>
+                    <option value="2-people">2 personer</option>
+                    <option value="2-people">3 personer</option>
+                    <option value="2-people">4 personer</option>
+                    <option value="2-people">5 personer</option>
+                    <option value="2-people">6 personer</option>
+                    <option value="2-people">7 personer</option>
+                    <option value="2-people">8 personer</option>
+                </select>
+
+                <h2>Övrig information</h2>
+                <input type="checkbox" name="information" value="wheelchair" id="wheelchair">
+                <label for="wheelchair">Handikappad/rullstol</label>
+
+                <input type="checkbox" name="information" value="pets" id="pets">
+                <label for="pets">Husdjur</label>
+
+                <input type="checkbox" name="information" value="child-seat" id="child-seat">
+                <label for="child-seat">Barnstol</label>
+
+                <input type="checkbox" name="information" value="luggage" id="luggage">
+                <label for="luggage">Resväskor</label>
+
+                <input type="checkbox" name="information" value="other" id="other">
+                <label for="other">Annat</label>
+                <!--Textfältet ska inte gå att fylla i förrän Annat-rutan är ibockat-->
+                <input type="text" id="other-freetext" placeholder="Ange annan information">
+
+                <button class="button">Spara</button>
+                <button class="button">Avbryt</button>
+
+
+            </form>
+
+        </div>
+        <div class="textbox" id="booking">
+            <h2>Bokning: Sarah Pettersson</h2>
+            <div class="personal-info"></div>
+            <div class="personal-info"></div>
+        </div>
+    </div>
+
+    <div id="map">
+        <div class="textbox" id="status"></div>
+        <div class="textbox" id="ongoing-rides">
+            <div class="ride"></div>
+            <div class="ride"></div>
+            <div class="ride"></div>
+        </div>
+
+        <div class="textbox" id="bottom">
+            <div class="textbox" id="available-rides">
+                <div class="driver-info"></div>
+                <div class="driver"></div>
+                <div class="driver"></div>
+                <div class="driver"></div>
+                <div class="driver"></div>
+                <div class="driver"></div>
+            </div>
+            <div class="textbox" id="confirmed-booking"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
