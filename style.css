@@ -2,13 +2,13 @@ html {
     font-family: Inter, sans-serif;
 }
 
-body{
-    display:grid;
+body {
+    display: grid;
     grid-template-columns: 350px 1fr;
     height: 100vh;
 }
 
-#map{
+#map {
     background-image: url("/assets/map_1429x1017.png");
 }
 
@@ -24,24 +24,24 @@ body{
     background-color: white;
     border: 1px solid black;
     display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.driver-table {
-  border-collapse: separate;
-  border-spacing: 0 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+.driver-table th {
+    font-weight: normal;
+    text-align: left;
+    padding: 10px 14px;
 }
 
 .driver-table td {
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+    padding: 10px 14px;
 }
 
-.driver-table td:first-child {
-  border-left: 1px solid gray;
+.driver-table tbody tr td {
+    border-bottom: 1px solid lightgray;
 }
 
-.driver-table td:last-child {
-  border-right: 1px solid gray;
+.driver-table tbody tr:last-child td {
+    border-bottom: none;
 }
