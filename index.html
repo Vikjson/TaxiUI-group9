@@ -1,179 +1,179 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Taxi UI</title>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
-  </head>
 
-  <body>
-    <div class="textbox" id="left">
-      <div class="textbox" id="booking-form">
-        <h1>Lägg till ny bokning</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taxi UI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
 
-        <form>
-          <label for="name">Kundens namn:</label>
-          <input type="text" id="name" placeholder="Namn och efternamn" />
+<body>
+  <div class="textbox" id="left">
+    <div class="textbox" id="booking-form">
+      <h1>Lägg till ny bokning</h1>
 
-          <label for="address">Upphämtningsadress</label>
-          <input type="text" id="address" placeholder="Ange giltig adress" />
+      <form>
+        <label for="name">Kundens namn:</label>
+        <input type="text" id="name" placeholder="Namn och efternamn" />
 
-          <label for="destination">Destination</label>
-          <input
-            type="text"
-            id="destination"
-            placeholder="Ange giltig adress"
-          />
+        <label for="address">Upphämtningsadress</label>
+        <input type="text" id="address" placeholder="Ange giltig adress" />
 
-          <label for="phone">Kundens telefonnummer</label>
-          <input type="tel" id="phone" placeholder="+46" />
+        <label for="destination">Destination</label>
+        <input type="text" id="destination" placeholder="Ange giltig adress" />
 
-          <label for="passengers">Antal passagerare</label>
-          <select name="passengers">
-            <option value="1-person">1 person</option>
-            <option value="2-people">2 personer</option>
-            <option value="2-people">3 personer</option>
-            <option value="2-people">4 personer</option>
-            <option value="2-people">5 personer</option>
-            <option value="2-people">6 personer</option>
-            <option value="2-people">7 personer</option>
-            <option value="2-people">8 personer</option>
-          </select>
+        <label for="phone">Kundens telefonnummer</label>
+        <input type="tel" id="phone" placeholder="+46" />
 
-          <h2>Övrig information</h2>
-          <input
-            type="checkbox"
-            name="information"
-            value="wheelchair"
-            id="wheelchair"
-          />
-          <label for="wheelchair">Handikappad/rullstol</label>
+        <label for="passengers">Antal passagerare</label>
+        <select name="passengers" id="passengers">
+          <option value="1-person">1 person</option>
+          <option value="2-people">2 personer</option>
+          <option value="3-people">3 personer</option>
+          <option value="4-people">4 personer</option>
+          <option value="5-people">5 personer</option>
+          <option value="6-people">6 personer</option>
+          <option value="7-people">7 personer</option>
+          <option value="8-people">8 personer</option>
+        </select>
 
-          <input type="checkbox" name="information" value="pets" id="pets" />
-          <label for="pets">Husdjur</label>
+        <h2>Övrig information</h2>
 
-          <input
-            type="checkbox"
-            name="information"
-            value="child-seat"
-            id="child-seat"
-          />
-          <label for="child-seat">Barnstol</label>
+        <input type="checkbox" name="information" value="wheelchair" id="wheelchair" />
+        <label for="wheelchair">Handikappad/rullstol</label>
 
-          <input
-            type="checkbox"
-            name="information"
-            value="luggage"
-            id="luggage"
-          />
-          <label for="luggage">Resväskor</label>
+        <input type="checkbox" name="information" value="pets" id="pets" />
+        <label for="pets">Husdjur</label>
 
-          <input type="checkbox" name="information" value="other" id="other" />
-          <label for="other">Annat</label>
-          <!--Textfältet ska inte gå att fylla i förrän Annat-rutan är ibockat-->
-          <input
-            type="text"
-            id="other-freetext"
-            placeholder="Ange annan information"
-          />
+        <input type="checkbox" name="information" value="child-seat" id="child-seat" />
+        <label for="child-seat">Barnstol</label>
 
-          <button class="button">Spara</button>
-          <button class="button">Avbryt</button>
-        </form>
-      </div>
-      <div class="textbox" id="booking">
-        <h2>Bokning: Sarah Pettersson</h2>
-        <div class="personal-info"></div>
-        <div class="personal-info"></div>
-        <p><img src="icons/passagerare.png" class="icon" /> 3 personer</p>
-        <p><img src="icons/telefon.png" class="icon" /> +46 700474415</p>
-        <p>
-          <img src="icons/start.png" class="icon" />
-          <strong>Från:</strong> Lärdomsgatan 4
-        </p>
-        <p>
-          <img src="icons/mal.png" class="icon" />
-          <strong>Till:</strong> Landvetter flygplats
-        </p>
-        <p><img src="icons/vaska.png" class="icon" /> Resväskor</p>
-      </div>
+        <input type="checkbox" name="information" value="luggage" id="luggage" />
+        <label for="luggage">Resväskor</label>
+
+        <input type="checkbox" name="information" value="other" id="other" />
+        <label for="other">Annat</label>
+
+        <!-- Textfältet ska inte gå att fylla i förrän Annat-rutan är ibockat -->
+        <input type="text" id="other-freetext" placeholder="Ange annan information" />
+
+        <button class="button" type="submit">Spara</button>
+        <button class="button" type="button">Avbryt</button>
+      </form>
     </div>
 
-    <div id="map">
-      <div class="textbox" id="status"></div>
-      <div class="textbox" id="ongoing-rides">
-        <div class="ride"></div>
-        <div class="ride"></div>
-        <div class="ride"></div>
+    <div class="textbox" id="booking">
+      <h2>Bokning: Sarah Pettersson</h2>
+      <div class="personal-info"></div>
+      <div class="personal-info"></div>
+      <p><img src="Assets/person.png" class="icon" /> 3 personer</p>
+      <p><img src="Assets/phone.png" class="icon" /> +46 700474415</p>
+      <p>
+        <img src="Assets/pin.png" class="icon" />
+        <strong>Från:</strong> Lärdomsgatan 4
+      </p>
+      <p>
+        <img src="Assets/pin.png" class="icon" />
+        <strong>Till:</strong> Landvetter flygplats
+      </p>
+      <p><img src="Assets/info.png" class="icon" /> Resväskor</p>
+    </div>
+  </div>
+
+  <div id="map">
+    <div class="textbox" id="status"></div>
+
+    <div class="textbox" id="ongoing-rides">
+      <div class="ride"></div>
+      <div class="ride"></div>
+      <div class="ride"></div>
+    </div>
+
+    <div class="textbox" id="bottom">
+      <div class="textbox" id="available-rides">
+        <h3>Tillgängliga förare</h3>
+        <table class="driver-table">
+          <thead>
+            <tr>
+              <th>Tillgänglig</th>
+              <th>Distans</th>
+              <th>ETA</th>
+              <th>Taxibil</th>
+              <th>Förare</th>
+              <th>Anpassning</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="status-free">Ledig</td>
+              <td>5 km bort</td>
+              <td>5 min</td>
+              <td>#113</td>
+              <td>Ali Hansson</td>
+              <td>Husdjur</td>
+              <td><button class="select-btn">Välj</button></td>
+            </tr>
+            <tr>
+              <td class="status-break">Rast</td>
+              <td>10 km bort</td>
+              <td>10 min</td>
+              <td>#48</td>
+              <td>Lisa Bolund</td>
+              <td>Rullstol</td>
+              <td><button class="select-btn">Välj</button></td>
+            </tr>
+            <tr>
+              <td class="status-free">Ledig</td>
+              <td>3 km bort</td>
+              <td>3 min</td>
+              <td>#220</td>
+              <td>Johan Lindgren</td>
+              <td>Barnstol</td>
+              <td><button class="select-btn">Välj</button></td>
+            </tr>
+            <tr>
+              <td>3 min</td>
+              <td>8 km bort</td>
+              <td>8 min</td>
+              <td>#78</td>
+              <td>Maggan Xin</td>
+              <td>Barnstol</td>
+              <td><button class="select-btn">Välj</button></td>
+            </tr>
+            <tr>
+              <td class="status-break">Rast</td>
+              <td>10 km bort</td>
+              <td>10 min</td>
+              <td>#30</td>
+              <td>Össan Väst</td>
+              <td>Husdjur, Rullstol</td>
+              <td><button class="select-btn">Välj</button></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-      <div class="textbox" id="bottom">
-        <div class="textbox" id="available-rides">
-          <h3>Tillgängliga förare</h3>
-          <table class="driver-table">
-            <thead>
-              <tr>
-                <th>Tillgänglig</th>
-                <th>Distans</th>
-                <th>ETA</th>
-                <th>Taxibil</th>
-                <th>Förare</th>
-                <th>Anpassning</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="status-free">Ledig</td>
-                <td>5 km bort</td>
-                <td>5 min</td>
-                <td>#113</td>
-                <td>Ali Hansson</td>
-                <td>Husdjur</td>
-                <td><button class="select-btn">Välj</button></td>
-              </tr>
-              <tr>
-                <td class="status-break">Rast</td>
-                <td>10 km bort</td>
-                <td>10 min</td>
-                <td>#48</td>
-                <td>Lisa Bolund</td>
-                <td>Rullstol</td>
-                <td><button class="select-btn">Välj</button></td>
-              </tr>
-              <tr>
-                <td class="status-free">Ledig</td>
-                <td>3 km bort</td>
-                <td>3 min</td>
-                <td>#220</td>
-                <td>Johan Lindgren</td>
-                <td>Barnstol</td>
-                <td><button class="select-btn">Välj</button></td>
-              </tr>
-              <tr>
-                <td>3 min</td>
-                <td>8 km bort</td>
-                <td>8 min</td>
-                <td>#78</td>
-                <td>Maggan Xin</td>
-                <td>Barnstol</td>
-                <td><button class="select-btn">Välj</button></td>
-              </tr>
-              <tr>
-                <td class="status-break">Rast</td>
-                <td>10 km bort</td>
-                <td>10 min</td>
-                <td>#30</td>
-                <td>Össan Väst</td>
-                <td>Husdjur, Rullstol</td>
-                <td><button class="select-btn">Välj</button></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div class="textbox" id="confirmation">
+        <h3>Bokningsbekräftelse</h3>
+        <strong>Kund:</strong>
+        <p>Sarah Pettersson</p>
+        <p>+46 700474415</p>
+        <p>3 personer</p>
+        <p>Från: Lärdomsgatan 4</p>
+        <p>Till: Landvetter flygplats</p>
+        <hr>
+        <strong>Förare:</strong>
+        <p>Taxi #220</p>
+        <p>Johan Lindgren</p>
+        <p>ETA: 3 min</p>
+        <button class="button" type="button">Skicka via SMS</button>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
