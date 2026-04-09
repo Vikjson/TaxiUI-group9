@@ -6,6 +6,12 @@ body {
     display: grid;
     grid-template-columns: 350px 1fr;
     height: 100vh;
+    font-size: 0.7em;
+
+}
+
+p {
+    font-size: x-small;
 }
 
 #map {
@@ -25,10 +31,83 @@ body {
     padding-top: 0px;
 }
 
+.icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#status-bar {
+    display: flex;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.status {
+    display: flex;
+    flex-direction: row; 
+    align-items: baseline;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(136, 136, 136);
+    border-radius: 50%;
+}
+
+#ongoing-rides {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 25%;
+    height: 40%;
+    overflow: hidden;
+}
+
+#rides-list {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+
+.ride {
+    border: 1px solid black;
+    margin-top: 1%;
+    padding: 2%;
+    width: 80%;
+}
+
+.destination {
+    display: flex;
+    flex-direction: row;
+}
+
+#bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
 #available-rides {
     background-color: white;
     border: 1px solid black;
     display: inline-block;
+    width: 80%;
 }
 
 .driver-table {
@@ -51,63 +130,6 @@ body {
     border-right: 1px solid gray;
 }
 
-.icon {
-    width: 18px;
-    height: 18px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-#status-bar {
-    display: flex;
-    background-color: white;
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.dot {
-    width: 20px;
-    height: 20px;
-    background-color: rgb(136, 136, 136);
-    border-radius: 50%;
-}
-
-#ongoing-rides {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    padding-left: 2%;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 342px;
-    height: 443px;
-    overflow: hidden;
-}
-
-#rides-list {
-    flex: 1;
-    min-height: 0;
-    overflow-y: auto;
-}
-
-
-.ride {
-    border: 1px solid black;
-    margin-top: 1%;
-    padding: 10px;
-    padding-top: 0px;
-    width: 257px;
-}
-
-#bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content:left;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+#confirmation {
+    width: 15%;
 }
