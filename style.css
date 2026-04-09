@@ -26,3 +26,10 @@ body{
     margin-right: 10px;
     vertical-align: middle;
 }
+
+.dot{
+     width: 20px;
+    height: 20px;
+    background-color: rgb(136, 136, 136); 
+    border-radius: 50%;
+}
