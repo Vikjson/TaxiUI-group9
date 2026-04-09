@@ -10,6 +10,7 @@ body{
 
 #map{
     background-image: url("/assets/map_1429x1017.png");
+    background-repeat: no-repeat;
 }
 
 #confirmation {
