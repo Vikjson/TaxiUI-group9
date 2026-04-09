@@ -2,34 +2,91 @@ html {
     font-family: Inter, sans-serif;
 }
 
-body{
-    display:grid;
+body {
+    display: grid;
     grid-template-columns: 350px 1fr;
     height: 100vh;
 }
 
-#map{
+#map {
     background-image: url("/assets/map_1429x1017.png");
     background-repeat: no-repeat;
 }
 
 #confirmation {
+    background-color: white;
     border: 1px solid black;
     display: inline-block;
     padding: 10px;
     padding-top: 0px;
 }
 
+#available-rides {
+    background-color: white;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.driver-table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.driver-table td {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.driver-table td:first-child {
+    border-left: 1px solid gray;
+}
+
+.driver-table td:last-child {
+    border-right: 1px solid gray;
+}
+
 .icon {
-    width: 18px;   
+    width: 18px;
     height: 18px;
     margin-right: 10px;
     vertical-align: middle;
 }
 
-.dot{
-     width: 20px;
+#status-bar {
+    display: flex;
+    background-color: white;
+}
+
+.dot {
+    width: 20px;
     height: 20px;
-    background-color: rgb(136, 136, 136); 
+    background-color: rgb(136, 136, 136);
     border-radius: 50%;
+}
+
+#ongoing-rides {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    width: 342px;
+    height: 443px;
+    overflow: hidden;
+}
+
+#rides-list {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+
+.ride {
+    border: 1px solid black;
+    margin-top: 1%;
+    padding: 10px;
+    padding-top: 0px;
+    width: 257px;
 }
