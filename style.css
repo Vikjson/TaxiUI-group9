@@ -2,6 +2,16 @@ html {
     font-family: Inter, sans-serif;
 }
 
+body{
+    display:grid;
+    grid-template-columns: 350px 1fr;
+    height: 100vh;
+}
+
+#map{
+    background-image: url("/assets/map_1429x1017.png");
+}
+
 #confirmation {
     border: 1px solid black;
     display: inline-block;
