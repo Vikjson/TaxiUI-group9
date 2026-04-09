@@ -38,13 +38,49 @@ th{
     display:
 }
 
+#booking-form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid black;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+#booking-form h1 {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+#booking-form h2 {
+    font-weight: normal;
+}
+
+#booking-form label {
+    display: block;
+}
+
+#booking-form input {
+    display: block;
+}
+
+#booking-form button {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
 #confirmation {
     background-color: white;
     border: 1px solid black;
     display: inline-block;
     padding: 10px;
     padding-top: 0px;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
+
 
 .icon {
     width: 18px;
@@ -124,6 +160,7 @@ th{
     display: inline-block;
     width: 80%;
     font-size: 1.5 rem;
+     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .driver-table {
@@ -134,17 +171,22 @@ th{
     padding-right: 10px;
 }
 
+.driver-table th {
+    font-weight: normal;
+    text-align: left;
+    padding: 10px 14px;
+}
+
 .driver-table td {
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+   padding: 10px 14px;
 }
 
-.driver-table td:first-child {
-    border-left: 1px solid gray;
+.driver-table tbody tr td {
+    border-bottom: 1px solid lightgray;
 }
 
-.driver-table td:last-child {
-    border-right: 1px solid gray;
+.driver-table tbody tr:last-child td {
+    border-bottom: none;
 }
 
 #confirmation {
