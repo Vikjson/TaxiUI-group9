@@ -111,3 +111,12 @@ body {
     left: 0;
     width: 100%;
 }
+
+#booking-form {
+    border: 1px solid black;       
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    
+}
