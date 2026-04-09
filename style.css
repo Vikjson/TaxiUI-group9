@@ -6,12 +6,27 @@ body {
     display: grid;
     grid-template-columns: 350px 1fr;
     height: 100vh;
-    font-size: 0.7em;
+    font-size: 1rem;
+}
 
+h1{
+    margin:2%;
+    font-weight: 400;
+}
+
+h2, h3{
+    margin:2%;
+    font-weight: 400;
 }
 
 p {
-    font-size: x-small;
+    font-size: 1 rem;
+    padding: 0;
+    margin: 1%;
+}
+
+th{
+    font-weight: 400;
 }
 
 #map {
@@ -108,9 +123,11 @@ p {
     border: 1px solid black;
     display: inline-block;
     width: 80%;
+    font-size: 1.5 rem;
 }
 
 .driver-table {
+    width: 100%;
     border-collapse: separate;
     border-spacing: 0 10px;
     padding-left: 10px;
