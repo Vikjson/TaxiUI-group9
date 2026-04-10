@@ -9,13 +9,14 @@ body {
     font-size: 1rem;
 }
 
-h1{
-    margin:2%;
+h1 {
+    margin: 2%;
     font-weight: 400;
 }
 
-h2, h3{
-    margin:2%;
+h2,
+h3 {
+    margin: 2%;
     font-weight: 400;
 }
 
@@ -25,7 +26,7 @@ p {
     margin: 1%;
 }
 
-th{
+th {
     font-weight: 400;
 }
 
@@ -75,12 +76,24 @@ th{
 #confirmation {
     background-color: white;
     border: 1px solid black;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 10px;
     padding-top: 0px;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    width: 17%;
 }
 
+#confirmation h3 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#confirmation hr {
+    margin: 1rem;
+}
 
 .icon {
     width: 18px;
@@ -100,7 +113,7 @@ th{
 
 .status {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: baseline;
 }
 
@@ -129,7 +142,6 @@ th{
     min-height: 0;
     overflow-y: auto;
 }
-
 
 .ride {
     border: 1px solid black;
@@ -160,13 +172,13 @@ th{
     display: inline-block;
     width: 80%;
     font-size: 1.5 rem;
-     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .driver-table {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 0 10px;
+    border-spacing: 0 1.6rem;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -178,7 +190,7 @@ th{
 }
 
 .driver-table td {
-   padding: 10px 14px;
+    padding: 10px 14px;
 }
 
 .driver-table tbody tr td {
@@ -187,8 +199,4 @@ th{
 
 .driver-table tbody tr:last-child td {
     border-bottom: none;
-}
-
-#confirmation {
-    width: 15%;
 }
