@@ -30,28 +30,34 @@ th {
     font-weight: 400;
 }
 
+button {
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
 #map {
     background-image: url("/assets/map_1429x1017.png");
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
     background-position: center;
-    display:
 }
 
 #booking-form {
     background-color: white;
+    border: 1px solid black;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    border: 1px solid black;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 80%;
 }
 
 #booking-form h1 {
-    margin-bottom: 0;
     font-weight: normal;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
 }
 
 #booking-form h2 {
@@ -66,22 +72,36 @@ th {
     display: block;
 }
 
-#booking-form button {
+.buttons {
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    justify-content: space-evenly;
+}
+
+#booking-form button {
+    padding-left: 3.6rem;
+    padding-right: 3.6rem;
+}
+
+#booking {
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+    height: 16.7%;
+    display: flex;
+    flex-direction: column;
 }
 
 #confirmation {
     background-color: white;
     border: 1px solid black;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
     padding-top: 0px;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
     width: 17%;
 }
 
@@ -103,18 +123,20 @@ th {
 }
 
 #status-bar {
-    display: flex;
     background-color: white;
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.status {
+    border: 1px solid black;
+    border-radius: 3rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    width: 40%;
+    height: 4%;
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    justify-content: space-between;
+    position: absolute;
+    top: 1rem;
+    left: 15%;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .dot {
@@ -124,8 +146,16 @@ th {
     border-radius: 50%;
 }
 
+.status {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
 #ongoing-rides {
     background-color: white;
+    border: 1px solid black;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     padding-left: 2%;
@@ -169,10 +199,8 @@ th {
 #available-rides {
     background-color: white;
     border: 1px solid black;
-    display: inline-block;
     width: 80%;
-    font-size: 1.5 rem;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .driver-table {
