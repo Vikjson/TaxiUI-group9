@@ -48,10 +48,10 @@ button {
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
     height: 80%;
 }
+
 
 #booking-form h1 {
     font-weight: normal;
@@ -60,16 +60,30 @@ button {
     padding-top: 1rem;
 }
 
+#booking-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
 #booking-form h2 {
     font-weight: normal;
 }
 
-#booking-form label {
-    display: block;
+.option {
+    display: flex;
+    white-space: nowrap;
 }
 
 #booking-form input {
     display: block;
+    width: 97%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#passengers {
+    width: 45%;
 }
 
 .buttons {
@@ -81,6 +95,7 @@ button {
 #booking-form button {
     padding-left: 3.6rem;
     padding-right: 3.6rem;
+    margin-bottom: 1rem;
 }
 
 #booking {
