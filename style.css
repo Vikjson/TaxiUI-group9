@@ -169,7 +169,7 @@ button {
     flex: 1;
     min-height: 0;
     overflow-y: auto;
-   }
+}
 
 .ride {
     border: 1px solid black;
@@ -178,7 +178,7 @@ button {
     width: 88%;
 }
 
-.destination{
+.destination {
     display: flex;
     flex-direction: row;
 }
@@ -266,8 +266,6 @@ th {
     height: 18px;
     margin-right: 10px;
     vertical-align: middle;
-    width: 17%;
-
 }
 
 #confirmation h3 {
