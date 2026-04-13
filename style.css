@@ -26,20 +26,8 @@ p {
     margin: 1%;
 }
 
-th {
-    font-weight: 400;
-}
-
 button {
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-}
-
-#map {
-    background-image: url("/assets/map_1429x1017.png");
-    background-repeat: no-repeat;
-    position: relative;
-    background-size: cover;
-    background-position: center;
 }
 
 #booking-form {
@@ -51,7 +39,6 @@ button {
     align-items: center;
     height: 80%;
 }
-
 
 #booking-form h1 {
     font-weight: normal;
@@ -77,7 +64,7 @@ button {
 }
 
 .option input {
-    width: auto; /* override the 97% */
+    width: auto;
 }
 
 #booking-form input[type="text"],
@@ -115,33 +102,19 @@ button {
     flex-direction: column;
 }
 
-#confirmation {
-    background-color: white;
-    border: 1px solid black;
-    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-    padding-top: 0px;
-    width: 17%;
-}
-
-#confirmation h3 {
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-}
-
-#confirmation hr {
-    margin: 1rem;
-}
-
 .icon {
     width: 18px;
     height: 18px;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+#map {
+    background-image: url("/assets/map_1429x1017.png");
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center;
 }
 
 #status-bar {
@@ -202,11 +175,6 @@ button {
     width: 80%;
 }
 
-.destination {
-    display: flex;
-    flex-direction: row;
-}
-
 #bottom {
     display: flex;
     flex-direction: row;
@@ -214,7 +182,7 @@ button {
     position: absolute;
     height: 40%;
     bottom: 0;
-    left: 0;
+    left: 0.3%;
     width: 100%;
 }
 
@@ -223,6 +191,10 @@ button {
     border: 1px solid black;
     width: 80%;
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+th {
+    font-weight: 400;
 }
 
 .driver-table {
@@ -249,4 +221,26 @@ button {
 
 .driver-table tbody tr:last-child td {
     border-bottom: none;
+}
+
+#confirmation {
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 0px;
+    width: 17%;
+}
+
+#confirmation h3 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#confirmation hr {
+    margin: 1rem;
 }
