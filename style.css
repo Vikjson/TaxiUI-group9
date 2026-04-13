@@ -2,21 +2,104 @@ html {
     font-family: Inter, sans-serif;
 }
 
-body{
-    display:grid;
+body {
+    display: grid;
     grid-template-columns: 350px 1fr;
     height: 100vh;
+    font-size: 1rem;
 }
 
-#map{
-    background-image: url("/assets/map_1429x1017.png");
+h1 {
+    margin: 2%;
+    font-weight: 400;
 }
 
-#confirmation {
+h2,
+h3 {
+    margin: 2%;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1 rem;
+    padding: 0;
+    margin: 1%;
+}
+
+button {
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+#booking-form {
+    background-color: white;
     border: 1px solid black;
-    display: inline-block;
-    padding: 10px;
-    padding-top: 0px;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+}
+
+#booking-form h1 {
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+#booking-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+#booking-form h2 {
+    font-weight: normal;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.option input {
+    width: auto;
+}
+
+#booking-form input[type="text"],
+#booking-form input[type="tel"],
+#booking-form select {
+    display: block;
+    width: 97%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#passengers {
+    width: 45%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#booking-form button {
+    padding-left: 3.6rem;
+    padding-right: 3.6rem;
+    margin-bottom: 1rem;
+}
+
+#booking {
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+    height: 16.7%;
+    display: flex;
+    flex-direction: column;
 }
 
 .icon {
@@ -24,4 +107,161 @@ body{
     height: 18px;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+#map {
+    background-image: url("/assets/map_1429x1017.png");
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+#status-bar {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    width: 40%;
+    height: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 1rem;
+    left: 15%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(136, 136, 136);
+    border-radius: 50%;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#ongoing-rides {
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 25%;
+    height: 40%;
+    overflow: hidden;
+}
+
+#rides-list {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+.ride {
+    border: 1px solid black;
+    margin-top: 1%;
+    padding: 2%;
+    width: 80%;
+}
+
+#bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    height: 40%;
+    bottom: 0;
+    left: 0.3%;
+    width: 100%;
+}
+
+#available-rides {
+    background-color: white;
+    border: 1px solid black;
+    width: 80%;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+th {
+    font-weight: 400;
+}
+
+.driver-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1.6rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.driver-table th {
+    font-weight: normal;
+    text-align: left;
+    padding: 10px 14px;
+}
+
+.driver-table td {
+    padding: 10px 14px;
+}
+
+.driver-table tbody tr td {
+    border-bottom: 1px solid lightgray;
+}
+
+.driver-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#confirmation {
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 0px;
+<<<<<<< HEAD
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
+=======
+    width: 17%;
+}
+
+#confirmation h3 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#confirmation hr {
+    margin: 1rem;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.visible {
+    opacity: 1;
+    pointer-events: auto;
+>>>>>>> 813a4e36fcaff18a47691e93b921085ce47a277f
 }
