@@ -232,7 +232,6 @@ th {
     justify-content: space-between;
     padding: 10px;
     padding-top: 0px;
-<<<<<<< HEAD
 }
 
 .icon {
@@ -240,7 +239,6 @@ th {
     height: 18px;
     margin-right: 10px;
     vertical-align: middle;
-=======
     width: 17%;
 }
 
@@ -263,5 +261,4 @@ th {
 .visible {
     opacity: 1;
     pointer-events: auto;
->>>>>>> 813a4e36fcaff18a47691e93b921085ce47a277f
 }
