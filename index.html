@@ -71,8 +71,8 @@
         <input type="text" id="other-freetext" placeholder="Ange annan information" />
 
         <div class="buttons">
-          <button class="button" type="submit">Spara</button>
-          <button class="button" type="button">Avbryt</button>
+          <button id="save-btn" class="button" type="button">Spara</button>
+          <button id="abort-btn"class="button" type="button">Avbryt</button>
         </div>
       </form>
     </div>
@@ -146,6 +146,7 @@
 
     <div class="textbox" id="bottom">
       <div id="available-rides" class="textbox hidden">
+        <table class="driver-table">
           <thead>
             <tr>
               <th>Tillgänglig</th>
@@ -220,7 +221,7 @@
         <p>Taxi #220</p>
         <p>Johan Lindgren</p>
         <p>ETA: 3 min</p>
-        <button class="button" type="button">Skicka via SMS</button>
+        <button class="button" id="send-sms-btn" type="button">Skicka via SMS</button>
       </div>
     </div>
   </div>

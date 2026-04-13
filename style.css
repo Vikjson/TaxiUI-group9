@@ -205,18 +205,19 @@ button {
 #bottom {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 1rem;
     position: absolute;
     height: 40%;
     bottom: 0;
-    left: 0.3%;
+    left: 1%;
     width: 100%;
 }
 
 #available-rides {
     background-color: white;
     border: 1px solid black;
-    width: 80%;
+    width: 85%;
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
@@ -259,6 +260,9 @@ th {
     justify-content: space-between;
     padding: 10px;
     padding-top: 0px;
+    margin-left: auto;
+    margin-right: 1rem;
+    width: 12%;
 }
 
 .icon {
@@ -278,10 +282,10 @@ th {
     margin: 1rem;
 }
 
-.hidden {
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s ease;
+#booking.hidden,
+#confirmation.hidden,
+#available-rides.hidden {
+    display: none;
 }
 
 .visible {
