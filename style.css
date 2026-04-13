@@ -189,7 +189,7 @@ button {
 #available-rides {
     background-color: white;
     border: 1px solid black;
-    width: 78%;
+    width: 80%;
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
@@ -233,7 +233,7 @@ th {
     padding: 10px;
     padding-top: 0px;
     width: 17%;
-    margin-right: 2%;
+    
 }
 
 #confirmation h3 {
