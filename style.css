@@ -72,10 +72,17 @@ button {
 
 .option {
     display: flex;
-    white-space: nowrap;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-#booking-form input {
+.option input {
+    width: auto; /* override the 97% */
+}
+
+#booking-form input[type="text"],
+#booking-form input[type="tel"],
+#booking-form select {
     display: block;
     width: 97%;
     padding-top: 0.5rem;
