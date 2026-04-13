@@ -155,8 +155,8 @@ button {
     flex-direction: column;
     padding-left: 2%;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 2%;
+    right: 2%;
     width: 25%;
     height: 40%;
     overflow: hidden;
@@ -189,7 +189,7 @@ button {
 #available-rides {
     background-color: white;
     border: 1px solid black;
-    width: 80%;
+    width: 78%;
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
@@ -233,6 +233,7 @@ th {
     padding: 10px;
     padding-top: 0px;
     width: 17%;
+    margin-right: 2%;
 }
 
 #confirmation h3 {
