@@ -259,6 +259,13 @@ th {
     justify-content: space-between;
     padding: 10px;
     padding-top: 0px;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
     width: 17%;
 
 }
@@ -271,4 +278,15 @@ th {
 
 #confirmation hr {
     margin: 1rem;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.visible {
+    opacity: 1;
+    pointer-events: auto;
 }
