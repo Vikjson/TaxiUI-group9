@@ -6,6 +6,32 @@ body {
     display: grid;
     grid-template-columns: 350px 1fr;
     height: 100vh;
+    font-size: 1rem;
+}
+
+h1 {
+    margin: 2%;
+    font-weight: 400;
+}
+
+h2,
+h3 {
+    margin: 2%;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1 rem;
+    padding: 0;
+    margin: 1%;
+}
+
+th {
+    font-weight: 400;
+}
+
+button {
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 #map {
@@ -14,41 +40,94 @@ body {
     position: relative;
     background-size: cover;
     background-position: center;
-    display:
+}
+
+#booking-form {
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+}
+
+
+#booking-form h1 {
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+#booking-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+#booking-form h2 {
+    font-weight: normal;
+}
+
+.option {
+    display: flex;
+    white-space: nowrap;
+}
+
+#booking-form input {
+    display: block;
+    width: 97%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#passengers {
+    width: 45%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#booking-form button {
+    padding-left: 3.6rem;
+    padding-right: 3.6rem;
+    margin-bottom: 1rem;
+}
+
+#booking {
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+    height: 16.7%;
+    display: flex;
+    flex-direction: column;
 }
 
 #confirmation {
     background-color: white;
     border: 1px solid black;
-    display: inline-block;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 10px;
     padding-top: 0px;
+    width: 17%;
 }
 
-#available-rides {
-    background-color: white;
-    border: 1px solid black;
-    display: inline-block;
+#confirmation h3 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
 }
 
-.driver-table {
-    border-collapse: separate;
-    border-spacing: 0 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.driver-table td {
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-}
-
-.driver-table td:first-child {
-    border-left: 1px solid gray;
-}
-
-.driver-table td:last-child {
-    border-right: 1px solid gray;
+#confirmation hr {
+    margin: 1rem;
 }
 
 .icon {
@@ -59,12 +138,20 @@ body {
 }
 
 #status-bar {
-    display: flex;
     background-color: white;
+    border: 1px solid black;
+    border-radius: 3rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    width: 40%;
+    height: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 1rem;
+    left: 15%;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .dot {
@@ -74,16 +161,24 @@ body {
     border-radius: 50%;
 }
 
+.status {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
 #ongoing-rides {
     background-color: white;
+    border: 1px solid black;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     padding-left: 2%;
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 342px;
-    height: 443px;
+    width: 25%;
+    height: 40%;
     overflow: hidden;
 }
 
@@ -93,23 +188,60 @@ body {
     overflow-y: auto;
 }
 
-
 .ride {
     border: 1px solid black;
     margin-top: 1%;
-    padding: 10px;
-    padding-top: 0px;
-    width: 257px;
+    padding: 2%;
+    width: 80%;
+}
+
+.destination {
+    display: flex;
+    flex-direction: row;
 }
 
 #bottom {
     display: flex;
     flex-direction: row;
-    justify-content:left;
+    justify-content: space-around;
     position: absolute;
+    height: 40%;
     bottom: 0;
     left: 0;
     width: 100%;
+}
+
+#available-rides {
+    background-color: white;
+    border: 1px solid black;
+    width: 80%;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.driver-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1.6rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.driver-table th {
+    font-weight: normal;
+    text-align: left;
+    padding: 10px 14px;
+}
+
+.driver-table td {
+    padding: 10px 14px;
+}
+
+.driver-table tbody tr td {
+    border-bottom: 1px solid lightgray;
+}
+
+.driver-table tbody tr:last-child td {
+    border-bottom: none;
 }
 
 #booking-form {
